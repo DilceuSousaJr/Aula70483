@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Meu_projeto_git1
 {
@@ -6,9 +7,19 @@ namespace Meu_projeto_git1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<string> minhaLista = new List<string>
+            {
+                "Felipe",
+                "Bruno",
+                "Dilceu",
+                "Rafael",
+                "Eduardo",
+                "Bruna"
+            };
 
-            Console.WriteLine("update git");
+            minhaLista.ForEach(x => Console.WriteLine(x));
+
+
 
             Console.ReadKey(true);
         }
