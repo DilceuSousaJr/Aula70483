@@ -32,13 +32,40 @@ namespace RegistroCivilDeNomes
                     case "2":
 
                         break;
+                    case "3":
+                        EditarUmNome();
+                        break;
                     default:
                         Console.WriteLine("Menu Invalido");
+                        Console.ReadKey(true);
                         break;
                 }
 
                 Console.Clear();
             }
+
+            Console.ReadKey(true);
+        }
+        static void EditarUmNome()
+
+        {
+            Console.Write("Edição de nomes do sisitema de registros");
+
+            var numerador = 0;
+
+            ListaDeNomes.ForEach(x => Console.WriteLine("Nome:{0,-10}Número:{1,-10}",x,"numero" + numerador++));
+
+            Console.WriteLine("Informe o numero para edição");
+
+            var index = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe um novo nome para registro");
+
+            var novoNome = Console.ReadLine();
+
+            ListaDeNomes[index] = novoNome;
+
+            Console.WriteLine("Registro alterado com sucesso!");
 
             Console.ReadKey(true);
         }
