@@ -8,16 +8,24 @@ namespace ListaDeCarros
 {
     class Program
     {
-        static void Main(string[] args)
+
+        static List<string> ListaCarros = new List<string>
         {
-            List<string> carros = new List<string>
-            {
                 "Golf Sapão 2004",
                 "Bmw E39 1998",
                 "Jetta TSI 2015",
                 "Mercedez AMG 2015",
                 "Civic EXL 1994"
             };
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Lista de carros");
+            ListaCarros.ForEach(x => Console.WriteLine(x));
+
+            Console.ReadKey(true);
         }
+        
+
     }
+    
 }

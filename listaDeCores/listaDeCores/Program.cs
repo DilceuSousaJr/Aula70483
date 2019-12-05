@@ -81,6 +81,7 @@ namespace listaDeCores
             Console.WriteLine("Digite a cor desejada:");
             Console.WriteLine("1 - Registrar Cor");
             Console.WriteLine("2 - Listar Cor");
+            Console.WriteLine("3 - Sair");
 
             return Console.ReadLine();
         }
