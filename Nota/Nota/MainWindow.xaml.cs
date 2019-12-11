@@ -41,5 +41,10 @@ namespace Nota
             dataGrid.ItemsSource = null;
             dataGrid.ItemsSource = Alunos;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var pesquisa = Alunos.FirstOrDefault(x =>Nome_)
+        }
     }
 }

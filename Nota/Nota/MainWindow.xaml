@@ -19,7 +19,10 @@
         <TextBox x:Name="tbxNota2" Height="38" Margin="685,25,1087,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <Label Content="Nota3:" HorizontalAlignment="Left" Margin="825,29,0,0" VerticalAlignment="Top" Width="50"/>
         <TextBox x:Name="tbxNota3" HorizontalAlignment="Left" Height="38" Margin="875,25,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100"/>
-        <DataGrid x:Name="dataGrid" Height="315" Margin="35,110,0,0" VerticalAlignment="Top" Width="975"/>
+        <DataGrid x:Name="dataGrid" Height="290" Margin="58,135,23,0" VerticalAlignment="Top" Width="975"/>
+        <Button Content="Pesquisar" HorizontalAlignment="Left" Margin="35,80,0,0" VerticalAlignment="Top" Width="160" Height="35" Click="Button_Click"/>
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="220,80,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="295,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="85"/>
 
     </Grid>
 </Window>
