@@ -30,7 +30,7 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <TextBox x:Name="tbxFiltro" FontFamily="Javanese Text" FontSize="24" Margin="20,30,25,15" TextWrapping="Wrap" Text="TextBox" Background="#FFA2FF00">
+        <TextBox x:Name="tbxFiltro" FontFamily="Javanese Text" FontSize="24" Margin="20,30,25,15" TextWrapping="Wrap" Text="Nome do Filme " Background="#FFA2FF00">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
@@ -41,7 +41,7 @@
                                 Foreground="Black" Width="60" Header="Test" IsReadOnly="false" />
             </DataGrid.Columns>
         </DataGrid>
-        <ComboBox x:Name="cbxFiltro" Margin="40,30,15,0" VerticalAlignment="Top" Height="75" Grid.Column="1" Background="{DynamicResource Brush1}" SelectedIndex="0" FontSize="22">
+        <ComboBox x:Name="cbxFiltro" Margin="40,30,15,0" VerticalAlignment="Top" Height="75" Grid.Column="1" Background="{DynamicResource Brush1}" SelectedIndex="0" FontSize="22" SelectionChanged="CbxFiltro_SelectionChanged">
             <ListBoxItem Background="#FF050603" Content="Ordenar" IsSelected="True"/>
             <ListBoxItem Content="Filtro por nome" Background="White"/>
             <ListBoxItem Content="Ordenar por Tamanho" />
